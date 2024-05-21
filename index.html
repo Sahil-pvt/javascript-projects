@@ -11,6 +11,11 @@
       margin: 0;
       padding: 0;
       background-color: rgb(24, 22, 22);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
     }
 
     .container {
@@ -23,9 +28,13 @@
 
     .box {
       width: 300px;
-      height: 200px;
+      /* height: 200px; */
       margin: 20px;
+      padding: 20px;
       text-align: center;
+      background-image: linear-gradient(135deg, #a8e, #f7dc6f);
+      background-size: 200%;
+      animation: gradient 15s ease infinite;
       background-color: rgb(215, 215, 215);
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -36,10 +45,32 @@
 
     .box:hover {
       transform: scale(1.05);
-      background-color: #e0e0e0;
+      background-size: 400%;
+      animation: gradient 15s ease infinite;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+      50% {
+        background-position: 100% 0%;
+      }
+      100% {
+        background-position: 0% 0%;
+      }
+
+      /* background-color: #e0e0e0; */
+
       /* Change background color on hover */
     }
 
+    .box h2 {
+      font-size: 24px;
+      margin-top: 20px;
+      color: #fff;
+      text-shadow: 2px 2px 5px black;
+    }
     .box a {
       display: block;
       color: #333;
@@ -56,6 +87,10 @@
     <div class="box" onclick="window.location.href='Weather-App/'">
       <h2>Weather-App</h2>
       <a href="Weather-App/">Open</a>
+    </div>
+    <div class="box" onclick="window.location.href='To-Do-List-App/'">
+      <h2>To-Do-List-App</h2>
+      <a href="To-Do-List-App/">Open</a>
     </div>
   </div>
 </body>
