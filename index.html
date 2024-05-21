@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javascript Projects</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: rgb(24, 22, 22);
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      height: 60vh;
+    }
+
+    .box {
+      width: 300px;
+      height: 200px;
+      margin: 20px;
+      text-align: center;
+      background-color: rgb(215, 215, 215);
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      /* Change cursor to pointer to indicate clickable */
+    }
+
+    .box:hover {
+      transform: scale(1.05);
+      background-color: #e0e0e0;
+      /* Change background color on hover */
+    }
+
+    .box a {
+      display: block;
+      color: #333;
+      text-decoration: none;
+      font-size: 18px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Clickable div representing Software Engineering -->
+    <div class="box" onclick="window.location.href='Weather-App/'">
+      <h2>Weather-App</h2>
+      <a href="Weather-App/">Open</a>
+    </div>
+  </div>
+</body>
+
+</html>
