@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Age Calculator App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <h1>Age Calculator</h1>
+            <div class="input-box">
+                <input type="date" id="dob">
+                <button onclick="calculateAge()">Calculate</button>
+            </div>
+            <p id="res"></p>
+        </div>
+    </div>
+    <dialog id="myDialog">
+        <h1 id="dialog-title">Your Age!!</h1>
+        <p id="dialog-text"></p>
+        <div class="menu">
+            <button id="close-dialog" onclick="closeDialog()">Close</button>
+        </div>
+    </dialog>
+    <script src="script.js"></script>
+</body>
+
+</html>
